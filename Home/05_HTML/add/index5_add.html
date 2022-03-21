@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Additional</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" name="personal" method="get" target="_blank">
+        <fieldset>
+                    <legend>Личные данные</legend>
+                   <label><input type="text" name="Last_name" maxlength="25" autofocus required pattern="^[А-Яа-яЁё]+"> Фамилия</label> <br>
+                   <label><input type="text" name="First_name" maxlength="20" required pattern="^[А-Яа-яЁё]+"> Имя</label> <br>
+                   <label><input type="text" name="name" maxlength="24" required pattern="^[А-Яа-яЁё]+"> Отчество</label> <br>
+
+    <form action="http://fe.it-academy.by/TestForm.php" name="passport" method="get" target="_blank">
+        <fieldset>
+                    <legend>Паспортные данные</legend>
+                <input type="text" name="series" placeholder="Серия" maxlength="2" required pattern="[A-Z]{2,}">
+                <input type="text" name="pass_number" placeholder="№ паспорта" maxlength="7" required pattern="[0-9]{7,}">
+        </fieldset>
+    </form>
+
+            <form action="http://fe.it-academy.by/TestForm.php" name="birth_date" method="get" target="_blank">
+        <fieldset>
+                    <legend>Дата рождения</legend>
+                <label><input type="text" name="year" placeholder="XXXX" maxlength="4" pattern="[0-9]{4,}"> Год рождения</label> <br>
+                    <select name="month">
+                            <option value="1">Январь</option>
+                            <option value="2">Февраль</option>
+                            <option value="3">Март</option>
+                            <option value="4">Апрель</option>
+                            <option value="5">Май</option>
+                            <option value="6">Июнь</option>
+                            <option value="7">Июль</option>
+                            <option value="8">Август</option>
+                            <option value="9">Сентябрь</option>
+                            <option value="10">Октябрь</option>
+                            <option value="11">Ноябрь</option>
+                            <option value="12">Декабрь</option>
+                    </select> <br>
+                        <input type="number" name="date" min="1" max="31" step="1">
+        </fieldset>
+                    <select name="nationality" required>
+                            <option value="nat1">РБ</option>
+                            <option value="nat2">Россия</option>
+                            <option value="nat3">Украина</option>
+                            <option value="nat4">Польша</option>
+                            <option value="nat5">Литва</option>
+                            <option value="nat6">Латвия</option>   
+                    </select> <br>
+                    <p style="margin-bottom: 2px; margin-top: 2px;">Адрес:</p>
+                    <textarea name="address" id="addres" ></textarea>
+        </fieldset>
+    </form>
+        </form>
+
+        <form action="http://fe.it-academy.by/TestForm.php" name="interests" method="get" target="_blank">
+        <fieldset>
+            <legend>Интересы</legend>
+
+            <fieldset>
+                <legend>Хобби</legend>
+                    <label><input type="checkbox" name="hobby[]" value="check1"> Рыбалка</label> <br>
+                    <label><input type="checkbox" name="hobby[]" value="check2"> Астрономия</label> <br>
+                    <label><input type="checkbox" name="hobby[]" value="check3"> Дайвинг</label><br>
+                    <label><input type="checkbox" name="hobby[]" value="check4"> Марки</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Домашние животные (возможность выбрать несколько вариантов):</legend>
+
+            </fieldset>
+    
+        </fieldset>
+
+
+
+</body>
+</html>
