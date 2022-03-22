@@ -71,12 +71,59 @@
 
             <fieldset>
                 <legend>Домашние животные (возможность выбрать несколько вариантов):</legend>
+                    <select name="animals[]" size="12" multiple>
+                        <optgroup label="Попугаи">
+                            <option value="animal1">Волнистый</option>
+                            <option value="animal2">Ара</option>
+                            <option value="animal3">Неразлучник</option>
+                        </optgroup>
 
+                        <optgroup label="Рыба">
+                            <option value="animal4">Карась</option>
+                            <option value="animal5">Окунь</option>
+                            <option value="animal6">Осетр</option>
+                        </optgroup>
+
+                        <optgroup label="Птицы">
+                            <option value="animal7">Стая ворон</option>
+                            <option value="animal8">Аист</option>
+                            <option value="animal9">Археоптерикс</option>
+                        </optgroup>
+                    </select>
             </fieldset>
-    
         </fieldset>
 
+        <form action="http://fe.it-academy.by/TestForm.php" name="data_enter" method="get" target="_blank">
+            <fieldset>
+                <legend>Данные для входа и восстановления пароля</legend>
+                <input type="text" name="login" placeholder="Логин" required pattern="[A-Za-z]{5,}" maxlength="20"> <br>
+                <input type="password" name="psswrd" placeholder="Пароль" pattern="[A-Za-z]{10,}" maxlength="20" required autocomplete="off"> <br>
+            </fieldset>
+        </form>
 
+        <form action="http://fe.it-academy.by/TestForm.php" name="coordinates" method="get" target="_blank">
+            <fieldset>
+                <legend>Координаты</legend>
+                <input type="email" placeholder="Введите адрес почты" name="emails" multiple> <br>
+                <input type="url" placeholder="Введите адрес сайта" name="sites" multiple>
+            </fieldset>
+        </form>
 
+        <form action="http://fe.it-academy.by/TestForm.php" name="digits" method="get" target="_blank">
+            <fieldset>
+                <legend>Цифры</legend>
+                <label><input type="number" name="digit" min="-2.5" max="2.5" step="0.1">  Диапазон от -2,5 до 2,5 с шагом 0,1</label> <br>
+                <label><input type="range" name="space" min="1" max="10">  Максимальное 10 минимальное 1</label>
+            </fieldset>
+        </form>
+
+        <form action="http://fe.it-academy.by/TestForm.php" name="buttons" method="get" target="_blank">
+            <fieldset>
+                <legend>Кнопки управления</legend>
+                <input type="submit" name="send" value="Отправить">
+                <input type="reset" name="res" value="Сбросить"> <br>
+                <input type="image"  src="email.jpg" disabled>
+            </fieldset>
+        </form>
 </body>
 </html>
