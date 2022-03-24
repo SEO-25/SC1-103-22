@@ -8,8 +8,7 @@ h2 {
     text-align: right;
 }
 .cursive {
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Caveat', cursive;
 }
 .zero {
     text-indent: 0px;
