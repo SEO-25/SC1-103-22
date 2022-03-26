@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>List&Code</title>
+
+    <style>
+            ul {
+                list-style-type: lower-roman;
+                width: 350px;
+                font-size: 15px;
+            }
+            li {
+                margin-bottom: -10px;
+            }
+            div {
+                background-color: black;
+                width: 400px;
+                height: 4em;
+                overflow: auto;
+                
+                overflow: auto;
+                color: chartreuse;
+            }
+            .big {
+                list-style-type: upper-roman;
+                font-weight: 900;
+                font-size: 18px;
+            }
+            .not_bold {
+                font-weight: 400;
+                margin-bottom: -10px;
+            }
+    </style>
+</head>
+<body>
+  <ul class="big">
+        <li> Контейнер с кодом 
+            <ul class="not_bold">
+                <li>Цвет фона: черный</li> <br>
+                <li>Цвет текста: зеленый</li> <br>
+                <li>Ширина 400px</li> <br>
+                <li>Максимальная высота контейнера: 4-е строки</li> <br>
+                <li>Переполнение: автоматическое</li> <br>
+            </ul>
+        </li>
+        <li> Список
+            <ul class="not_bold">
+                <li>Ширина: 350px</li> <br>
+                <li>Тип списка: римские цифры</li> <br>
+                <li>Тип вложенного списка: римские нижний регистр цифры</li> <br>
+            </ul>
+        </li>  <br> 
+  </ul>
+        <div>
+            <code>
+                #!/usr/bin/env phyton <br>
+                print 'Hello. I am a phyton program.' <br>
+                name = raw_input("What is your name?") <br>
+                print "Hello there, " + name + "!" <br>          
+            </code>    
+        </div> 
+</body>
+</html>

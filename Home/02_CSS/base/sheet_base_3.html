@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sheet-base_3</title>
+<style>
+.nav {
+     background-color: rgb(175, 173, 173);
+     width:15em;
+     padding-bottom: 20px;
+     float: left;
+}
+.state {
+    background-color:brown ;
+    margin-bottom: 2em;
+}
+.footer {
+    background-color: chocolate;
+    clear: both;
+}
+.clear {
+    height: 0.1px;
+    background-color: black;
+    clear: both;
+}
+</style>
+</head>
+<body>
+            <div class="nav">
+            <h3>Блок навигации</h3>
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным, чтобы по высоте
+                        он начинал захватывать вторую статью, как показано в данном примере</li>
+                </ul>
+            </div>
+
+            <div class="state">
+                <h3>Статья 1</h3>
+                Размер блока: <br>
+                Занимает всю доступную ширину <br>
+                Должен присутствовать цвет фона <br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи margin-bottom <br>
+            </div>
+
+            <div class="state">
+                <h3>Статья 2</h3>
+                Размер блока: <br>
+                Занимает всю доступную ширину <br>
+                Должен присутствовать цвет фона <br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи margin-bottom.
+                Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.<br>
+                <img src="icon_mail.png" alt="mail" style="float: right;">
+                <div class="clear"></div>
+            </div>
+
+            <div class="footer">
+                Нижний блок, подвалю Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+            </div>
+
+
+
+
+
+    
+</body>
+</html>
