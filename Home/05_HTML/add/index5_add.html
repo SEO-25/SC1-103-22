@@ -15,15 +15,13 @@
                    <label><input type="text" name="First_name" maxlength="20" required pattern="^[А-Яа-яЁё]+"> Имя</label> <br>
                    <label><input type="text" name="name" maxlength="24" required pattern="^[А-Яа-яЁё]+"> Отчество</label> <br>
 
-    <form action="http://fe.it-academy.by/TestForm.php" name="passport" method="get" target="_blank">
+
         <fieldset>
                     <legend>Паспортные данные</legend>
                 <input type="text" name="series" placeholder="Серия" maxlength="2" required pattern="[A-Z]{2,}">
                 <input type="text" name="pass_number" placeholder="№ паспорта" maxlength="7" required pattern="[0-9]{7,}">
         </fieldset>
-    </form>
-
-            <form action="http://fe.it-academy.by/TestForm.php" name="birth_date" method="get" target="_blank">
+  
         <fieldset>
                     <legend>Дата рождения</legend>
                 <label><input type="text" name="year" placeholder="XXXX" maxlength="4" pattern="[0-9]{4,}"> Год рождения</label> <br>
@@ -54,10 +52,7 @@
                     <p style="margin-bottom: 2px; margin-top: 2px;">Адрес:</p>
                     <textarea name="address" id="addres" ></textarea>
         </fieldset>
-    </form>
-        </form>
 
-        <form action="http://fe.it-academy.by/TestForm.php" name="interests" method="get" target="_blank">
         <fieldset>
             <legend>Интересы</legend>
 
@@ -93,31 +88,24 @@
             </fieldset>
         </fieldset>
 
-        <form action="http://fe.it-academy.by/TestForm.php" name="data_enter" method="get" target="_blank">
             <fieldset>
                 <legend>Данные для входа и восстановления пароля</legend>
                 <input type="text" name="login" placeholder="Логин" required pattern="[A-Za-z]{5,}" maxlength="20"> <br>
                 <input type="password" name="psswrd" placeholder="Пароль" pattern="[A-Za-z]{10,}" maxlength="20" required autocomplete="off"> <br>
             </fieldset>
-        </form>
 
-        <form action="http://fe.it-academy.by/TestForm.php" name="coordinates" method="get" target="_blank">
             <fieldset>
                 <legend>Координаты</legend>
                 <input type="email" placeholder="Введите адрес почты" name="emails" multiple> <br>
                 <input type="url" placeholder="Введите адрес сайта" name="sites" multiple>
             </fieldset>
-        </form>
 
-        <form action="http://fe.it-academy.by/TestForm.php" name="digits" method="get" target="_blank">
             <fieldset>
                 <legend>Цифры</legend>
                 <label><input type="number" name="digit" min="-2.5" max="2.5" step="0.1">  Диапазон от -2,5 до 2,5 с шагом 0,1</label> <br>
                 <label><input type="range" name="space" min="1" max="10">  Максимальное 10 минимальное 1</label>
             </fieldset>
-        </form>
-
-        <form action="http://fe.it-academy.by/TestForm.php" name="buttons" method="get" target="_blank">
+      
             <fieldset>
                 <legend>Кнопки управления</legend>
                 <input type="submit" name="send" value="Отправить">
