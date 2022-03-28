@@ -1,0 +1,25 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(209, 210, 212);
+    }
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    }       
+.nav {
+     background-color: rgb(175, 173, 173);
+     width:15em;
+     /* нужно ли добавлять фиксированную высоту??*/
+     height: 16em; 
+}
+.state {
+    background-color:brown ;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+}
+.footer {
+    background-color: chocolate;
+    margin-left: -15em;
+}
