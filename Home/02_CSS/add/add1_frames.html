@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add1_frames</title>
+<style>
+.one {
+    width: 80%;
+    padding: 2em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-image: url('img/l.gif'),  url('img/r.gif'), url('img/t.gif'), url('img/b.gif'), url('img/t-r.gif'), url('img/t-l.gif'), url('img/b-l.gif'), url('img/b-r.gif');
+    background-repeat: repeat-y, repeat-y, repeat-x, repeat-x, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left, right, top, bottom, top rigth, top left, bottom left, bottom right;
+    background-color: #ccc; 
+}
+.two { 
+    width: 80%;
+    padding: 4em;
+    margin-bottom: 40px;
+    background-image: url('img1/l-b.png'), url('img1/l-t.png'), url('img1/r-b.png'), url('img1/r-t.png'), url('img1/l.png'), url('img1/r.png'), url('img1/b.png'), url('img1/t.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+    background-position: bottom left, top left, bottom right, top right, left, right, bottom, top;
+    background-color: #ccc;
+}
+.three {  
+    width: 80%;
+    padding: 2em;
+    margin-bottom: 40px;
+    background:
+    url('img/b-r.gif') no-repeat bottom right, 
+    url('img/b-l.gif') no-repeat bottom left, 
+    url('img/t-l.gif') no-repeat top left, 
+    url('img/t-r.gif') no-repeat top right, 
+    url('img/l.gif') repeat-y left, 
+    url('img/r.gif') repeat-y right, 
+    url('img/t.gif') repeat-x top, 
+    url('img/b.gif') repeat-x bottom;
+    background-color: rgb(153, 34, 34);
+}
+.solid_frame {
+    width: 80%;
+    padding: 2em;
+    background-color: aquamarine;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-width: 2.5em;
+    border-image-source: url('img1/ramka.png');
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    border-image-width: 2; 
+}
+</style>
+</head>
+<body>
+<div class="one">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus in
+    ventore sint quae neque aliquid quas quidem repellendus ratione hic fugit voluptas iusto opti
+    o quasi officia quaerat quod harum, dolore id!
+</div>
+
+<div class="two">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus in
+    ventore sint quae neque aliquid quas quidem repellendus ratione hic fugit voluptas iusto opti
+    o quasi officia quaerat quod harum, dolore id!
+</div>
+
+<div class="three">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint laboriosam rem odio architecto 
+    perspiciatis laborum optio praesentium deleniti omnis, eum maxime, voluptate illum numquam. Consequatur quasi 
+    voluptatum consectetur vel!
+</div>
+    
+</div>
+
+<div style=" width: 80%; background: url('img/b.gif') repeat-x bottom">
+    <div style="background: url('img/t.gif') repeat-x top">
+        <div style="background: url('img/r.gif') repeat-y right">
+            <div style="background: url('img/l.gif') repeat-y left">
+                <div style="background: url('img/t-r.gif') no-repeat top right">
+                    <div style="background: url('img/t-l.gif') no-repeat top left">
+                        <div style="background: url('img/b-l.gif') no-repeat bottom left">
+                            <div style="background: url('img/b-r.gif') no-repeat bottom right">
+                                <div style="padding: 2.5em;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident esse officia maiores commodi in, reprehenderit
+                                    quo aut blanditiis ipsam sit. Molestias esse, obcaecati iste dolor nobis corporis quaerat laudantium iure?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="solid_frame">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, quisquam ex veniam tenetur quidem quaerat quas sit
+ facilis aliquam dolor dicta odit ipsa voluptates. Molestias provident harum dolore qui eveniet.
+</div>
+
+ 
+</body>
+</html>

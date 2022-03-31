@@ -1,0 +1,45 @@
+div {
+    border-style: solid;
+    border-width: 0.5px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 1px;
+}
+a {
+    font-weight: bolder;
+} 
+.doc {
+    background-image: url('img/logo-doc.jpg');
+}
+.pdf {
+    background-image: url('img/logo-pdf.png');
+}
+.zip {
+    background-image: url('img/logo-zip.gif');
+}
+.image {
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+.list1 {
+    list-style-image: url('img/logo-list.jpg');
+}
+li a[href$=Doc]:hover {
+    background-image: url('img/logo-doc.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+li a[href$=pdf]:hover {
+    background-image: url('img/logo-pdf.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+li a[href$=zip]:hover {
+    background-image: url('img/logo-zip.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}

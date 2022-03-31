@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    background-color: gainsboro;
+}
+th {
+    background-color: rgb(113, 116, 113);
+    border: 2px solid white;
+}
+td {
+    border-bottom: 2px dotted gray;
+    border-right: 2px dotted gray;
+}
+tr:nth-child(2n) {
+    background-color:  white;
+}
+td:first-child {
+    border-left: 2px solid white;
+    font-weight: 700;
+}
+td:last-child {
+    border-right: 2px solid white;
+}
+tr:hover {
+    background: rgb(227, 100, 203);
+    color: rgb(73, 58, 173);
+}
