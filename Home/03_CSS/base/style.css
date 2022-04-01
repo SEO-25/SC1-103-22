@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Menu {
+    width: 1000px;
+    margin: auto;
+}
+.MainMenu {
+    display: inline-block;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: coral;
+    position: relative;
+    margin-left: -2px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    color: gray;
+}
+.lol {
+    display: none;
+    width: 150px;
+}
+.SubMenu {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: coral;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-weight: 600;
+    color: gray;
+}
+.MainMenu:hover {
+    background-color: brown;
+    color: cornflowerblue;
+    transition: all 0.5s ease;
+}
+.MainMenu:hover .lol {
+    display: block;
+    position: absolute;
+    nav-down: 100%;
+    z-index: 1;  
+}
+.SubMenu:first-child {
+    margin-top: 2px;
+}
+.SubMenu:hover {
+    background-color: brown;
+    color: cornflowerblue;
+    transition: all 0.5s ease;
+}
