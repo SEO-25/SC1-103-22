@@ -8,16 +8,16 @@ div {
 a {
     font-weight: bolder;
 } 
-div a[class^='doc']::after {
+a[class^='doc']::after {
     content: url('img/logo-doc.jpg');
 }
-div a[class^='pdf']::after {
+a[class^='pdf']::after {
     content: url('img/logo-pdf.png');
 }
-div a[class^='zip']::after {
+a[class^='zip']::after {
     content: url('img/logo-zip.gif');
 }
-div a[href^='https']::before {
+a[href^='https']::before {
     content: url('img/extref.png');
 }
 li:nth-child(n+1) {
